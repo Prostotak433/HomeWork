@@ -8,20 +8,14 @@ namespace _2._1_Couditional_Constructions
         {
             Console.WriteLine("Введите 1-oe число");
             int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите 2-oe число");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-
-            if(num1 > num2)
+           
+            if(num1 > 5 && 10 > num1)
             {
-                Console.WriteLine("1-oe Число больше 2-го");
-            }
-            else if(num1 < num2)
-            {
-                Console.WriteLine("2-oe число больше 1 - го");
+                Console.WriteLine("Число больше 5 и меньше 10");
             }
             else
             {
-                Console.WriteLine("Числа равны");
+                Console.WriteLine("Неизвестное число");
             }
             Console.ReadKey();
         }
