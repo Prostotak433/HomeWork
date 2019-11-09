@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\2.1 Couditional Constructions\bin\Debug\netcoreapp2.1\2.1 Couditional Constructions.deps.json
+D:\Repository\HomeWork\2.1 Couditional Constructions\bin\Debug\netcoreapp2.1\2.1 Couditional Constructions.runtimeconfig.json
+D:\Repository\HomeWork\2.1 Couditional Constructions\bin\Debug\netcoreapp2.1\2.1 Couditional Constructions.runtimeconfig.dev.json
+D:\Repository\HomeWork\2.1 Couditional Constructions\bin\Debug\netcoreapp2.1\2.1 Couditional Constructions.dll
+D:\Repository\HomeWork\2.1 Couditional Constructions\bin\Debug\netcoreapp2.1\2.1 Couditional Constructions.pdb
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.csprojAssemblyReference.cache
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.AssemblyInfo.cs
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.dll
+D:\Repository\HomeWork\2.1 Couditional Constructions\obj\Debug\netcoreapp2.1\2.1 Couditional Constructions.pdb
