@@ -6,17 +6,22 @@ namespace _2._1_Couditional_Constructions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите cумму вклада");
+            double sum = Convert.ToDouble(Console.ReadLine());
 
-            if (num1 == 5 || 10 == num1)
+            if (sum < 100)
             {
-                Console.WriteLine("Число либо равно 5, либо равно 10");
+                sum += sum * 0.05;
+            }
+            else if(sum >= 100 && sum <= 200)
+            {
+                sum += sum * 0.07;
             }
             else
             {
-                Console.WriteLine("Неизвестное число");
+                sum += sum * 0.1;
             }
+            Console.WriteLine($"Сумму вклада после начисления процентов: {sum}");
             Console.ReadKey();
         }
     }
