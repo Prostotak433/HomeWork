@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Task_1_Cycle\bin\Debug\netcoreapp2.1\Task_1_Cycle.deps.json
+D:\Repository\HomeWork\Task_1_Cycle\bin\Debug\netcoreapp2.1\Task_1_Cycle.runtimeconfig.json
+D:\Repository\HomeWork\Task_1_Cycle\bin\Debug\netcoreapp2.1\Task_1_Cycle.runtimeconfig.dev.json
+D:\Repository\HomeWork\Task_1_Cycle\bin\Debug\netcoreapp2.1\Task_1_Cycle.dll
+D:\Repository\HomeWork\Task_1_Cycle\bin\Debug\netcoreapp2.1\Task_1_Cycle.pdb
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.AssemblyInfo.cs
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.dll
+D:\Repository\HomeWork\Task_1_Cycle\obj\Debug\netcoreapp2.1\Task_1_Cycle.pdb
