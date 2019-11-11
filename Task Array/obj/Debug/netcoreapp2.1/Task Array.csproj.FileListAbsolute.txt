@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Task Array\bin\Debug\netcoreapp2.1\Task Array.deps.json
+D:\Repository\HomeWork\Task Array\bin\Debug\netcoreapp2.1\Task Array.runtimeconfig.json
+D:\Repository\HomeWork\Task Array\bin\Debug\netcoreapp2.1\Task Array.runtimeconfig.dev.json
+D:\Repository\HomeWork\Task Array\bin\Debug\netcoreapp2.1\Task Array.dll
+D:\Repository\HomeWork\Task Array\bin\Debug\netcoreapp2.1\Task Array.pdb
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.AssemblyInfo.cs
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.dll
+D:\Repository\HomeWork\Task Array\obj\Debug\netcoreapp2.1\Task Array.pdb
