@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Array sorting program\bin\Debug\netcoreapp2.1\Array sorting program.deps.json
+D:\Repository\HomeWork\Array sorting program\bin\Debug\netcoreapp2.1\Array sorting program.runtimeconfig.json
+D:\Repository\HomeWork\Array sorting program\bin\Debug\netcoreapp2.1\Array sorting program.runtimeconfig.dev.json
+D:\Repository\HomeWork\Array sorting program\bin\Debug\netcoreapp2.1\Array sorting program.dll
+D:\Repository\HomeWork\Array sorting program\bin\Debug\netcoreapp2.1\Array sorting program.pdb
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.AssemblyInfo.cs
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.dll
+D:\Repository\HomeWork\Array sorting program\obj\Debug\netcoreapp2.1\Array sorting program.pdb
