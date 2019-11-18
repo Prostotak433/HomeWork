@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\2 Task  Operator Overload\bin\Debug\netcoreapp2.1\2 Task  Operator Overload.deps.json
+D:\Repository\HomeWork\2 Task  Operator Overload\bin\Debug\netcoreapp2.1\2 Task  Operator Overload.runtimeconfig.json
+D:\Repository\HomeWork\2 Task  Operator Overload\bin\Debug\netcoreapp2.1\2 Task  Operator Overload.runtimeconfig.dev.json
+D:\Repository\HomeWork\2 Task  Operator Overload\bin\Debug\netcoreapp2.1\2 Task  Operator Overload.dll
+D:\Repository\HomeWork\2 Task  Operator Overload\bin\Debug\netcoreapp2.1\2 Task  Operator Overload.pdb
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.csprojAssemblyReference.cache
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.AssemblyInfo.cs
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.dll
+D:\Repository\HomeWork\2 Task  Operator Overload\obj\Debug\netcoreapp2.1\2 Task  Operator Overload.pdb
