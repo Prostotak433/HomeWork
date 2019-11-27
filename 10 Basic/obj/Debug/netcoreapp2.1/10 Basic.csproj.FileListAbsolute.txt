@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\10 Basic\bin\Debug\netcoreapp2.1\10 Basic.deps.json
+D:\Repository\HomeWork\10 Basic\bin\Debug\netcoreapp2.1\10 Basic.runtimeconfig.json
+D:\Repository\HomeWork\10 Basic\bin\Debug\netcoreapp2.1\10 Basic.runtimeconfig.dev.json
+D:\Repository\HomeWork\10 Basic\bin\Debug\netcoreapp2.1\10 Basic.dll
+D:\Repository\HomeWork\10 Basic\bin\Debug\netcoreapp2.1\10 Basic.pdb
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.csprojAssemblyReference.cache
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.AssemblyInfo.cs
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.dll
+D:\Repository\HomeWork\10 Basic\obj\Debug\netcoreapp2.1\10 Basic.pdb
