@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Task Basic\bin\Debug\netcoreapp2.1\Task Basic.deps.json
+D:\Repository\HomeWork\Task Basic\bin\Debug\netcoreapp2.1\Task Basic.runtimeconfig.json
+D:\Repository\HomeWork\Task Basic\bin\Debug\netcoreapp2.1\Task Basic.runtimeconfig.dev.json
+D:\Repository\HomeWork\Task Basic\bin\Debug\netcoreapp2.1\Task Basic.dll
+D:\Repository\HomeWork\Task Basic\bin\Debug\netcoreapp2.1\Task Basic.pdb
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.AssemblyInfo.cs
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.dll
+D:\Repository\HomeWork\Task Basic\obj\Debug\netcoreapp2.1\Task Basic.pdb
