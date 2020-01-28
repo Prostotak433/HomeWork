@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.AssemblyInfo.cs
+D:\Repository\HomeWork\Task For loop\bin\Debug\netcoreapp2.1\Task For loop.deps.json
+D:\Repository\HomeWork\Task For loop\bin\Debug\netcoreapp2.1\Task For loop.runtimeconfig.json
+D:\Repository\HomeWork\Task For loop\bin\Debug\netcoreapp2.1\Task For loop.runtimeconfig.dev.json
+D:\Repository\HomeWork\Task For loop\bin\Debug\netcoreapp2.1\Task For loop.dll
+D:\Repository\HomeWork\Task For loop\bin\Debug\netcoreapp2.1\Task For loop.pdb
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.dll
+D:\Repository\HomeWork\Task For loop\obj\Debug\netcoreapp2.1\Task For loop.pdb
