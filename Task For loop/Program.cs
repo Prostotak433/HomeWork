@@ -6,17 +6,15 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int n, sum=0;
-            double sred = 0;
-            Console.WriteLine("Веедите 10 чисел");
-            for (int i = 1; i <= 10; i++)
+            int n;
+            Console.WriteLine("Веедите  число");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("Номер {0} ", i);
-                n = Convert.ToInt32(Console.ReadLine());
-                sum += n;
+                Console.WriteLine("Число {0} и куб из {0} равен {1}",i,i*i*i);
+               
             }
-            sred = sum / 10.0;
-            Console.Write("Cумма: {0}\nСреднее значение {1}\n",sum,sred );
+            Console.Read();
                 
            
         }
