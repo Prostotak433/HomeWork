@@ -9,9 +9,9 @@ namespace Task_For_loop
             int n;
             Console.WriteLine("Веедите  число");
             n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= 10 ; i++)
             {
-                Console.WriteLine("Число {0} и куб из {0} равен {1}",i,i*i*i);
+                Console.WriteLine("{0} X {1} = {2}",n,i,n*i);
                
             }
             Console.Read();
