@@ -6,17 +6,21 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int n;
-            Console.WriteLine("Веедите  число");
-            n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= 10 ; i++)
+            int n,i,j;
+            Console.WriteLine("Введите число");
+            j = Convert.ToInt32(Console.ReadLine());
+            for (n = 1; n <= 8; n++)
             {
-                Console.WriteLine("{0} X {1} = {2}",n,i,n*i);
-               
+                for (i = 1; i <= j; i++)
+                {
+                    if(i<=j)
+                    Console.Write("{0}X{1}={2}  ", n, i, n * i);
+                }
+                Console.Write("\n");
             }
+
             Console.Read();
-                
-           
+          
         }
     }
     
