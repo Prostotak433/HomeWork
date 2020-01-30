@@ -13,7 +13,7 @@ namespace Task_For_loop
             for (n = 1; n <= i; n++)
             {
                 for (j = 1; j <= n; j++)
-                    Console.Write("*");
+                    Console.Write("{0}",j) ;
                 Console.Write("\n");
 
                
