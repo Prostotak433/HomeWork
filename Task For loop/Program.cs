@@ -6,17 +6,19 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int n,i,sum=0;
+            int n,i,j;
             Console.Write("Введите число: ");
             i = Convert.ToInt32(Console.ReadLine());
             
             for (n = 1; n <= i; n++)
             {
-                Console.WriteLine("{0}",2*n-1);
-                sum += 2 * n - 1;
+                for (j = 1; j <= n; j++)
+                    Console.Write("*");
+                Console.Write("\n");
+
                
             }
-            Console.Write("\nСумма чисел {0} = {1}\n ", i, sum);
+            
             Console.Read();
           
         }
