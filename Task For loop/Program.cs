@@ -6,16 +6,20 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int n,i,j,a=1;
-            Console.Write("Введите число: ");
-            i = Convert.ToInt32(Console.ReadLine());
-            
-            for (n = 1; n <= i; n++)
+            int a=1;
+            Console.Write("Введите число длины: ");
+            int i = Convert.ToInt32(Console.ReadLine());
+            int spc = i + 4-1;
+            for (int n = 1; n <= i; n++)
             {
-                for (j = 1; j <= n; j++)
-                    Console.Write("{0}",a++) ;
-                Console.Write("\n");
-
+                for (int j = spc; j>=1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k < n; k++)
+                    Console.Write("{0} ", a++);
+                Console.WriteLine("\n");
+                spc--;
                
             }
             
