@@ -6,7 +6,7 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int a=1;
+            
             Console.Write("Введите число длины: ");
             int i = Convert.ToInt32(Console.ReadLine());
             int spc = i + 4-1;
@@ -17,7 +17,7 @@ namespace Task_For_loop
                     Console.Write(" ");
                 }
                 for (int k = 1; k < n; k++)
-                    Console.Write("{0} ", a++);
+                    Console.Write("* ");
                 Console.WriteLine("\n");
                 spc--;
                
