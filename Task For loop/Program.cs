@@ -6,17 +6,23 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum = 0; 
+            
             Console.Write("Введите число длины: ");
             int i = Convert.ToInt32(Console.ReadLine());
+            int spc = i + 4 - 1;
             for (int n = 1; n <= i; n++)
             {
-                Console.Write("{0} ", 2 * n);
-                sum += 2*n;
-
+                for(int j=spc;j>=1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= n; k++)
+                    Console.Write("{0} ",n);
+                Console.Write("\n");
+                spc--;
             }
 
-            Console.WriteLine("Сумма натуральных чисел {0} равно {1}",i, sum);   
+           
             
             Console.Read();
           
