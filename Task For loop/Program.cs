@@ -7,18 +7,16 @@ namespace Task_For_loop
         static void Main(string[] args)
         {
             
-            Console.Write("Введите значение ");
-            int i = Convert.ToInt32(Console.ReadLine());
+          
             Console.Write("Введите число терминов ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            int t = 1, sum = 1;
-            for(int n =1; n<=a; n++)
+            double a = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            for(double n =1; n<=a; n++)
             {
-                int d = (2 * n) * (2 * n - 1);
-                t = -t * i * i / d;
-                sum = sum + t;
+                Console.Write("1/{0}+",n);
+                sum = sum + 1 / n;
             }
-            Console.WriteLine("\nСумма sum = {0}\nКоличество терминов {1}\nЗначение x = {2} ", sum, a, i);
+            Console.WriteLine("\nКоличество терминов {0}\nОжидаеммый результат = {1} ", a,sum);
            
             
             Console.Read();
