@@ -6,18 +6,24 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum = 0, t = 9;
+            int q, p;
             Console.Write("Введите количество терменов ");
             int a = Convert.ToInt32(Console.ReadLine());
             for(int i = 1; i <=a; i++)
             {
-                sum += t;
-                Console.WriteLine("{0} ", t);
-                t = t * 10 + 9;
+                if (i % 2 == 0) { p = 1; q = 0; }
+                else {  p = 0;  q = 1; }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    if (j % 2 == 0)
+                        Console.Write("{0} ", p);
+                    else
+                        Console.Write("{0} ", q);
+                }
+                Console.Write("\n");
             }
-            Console.Write("Количество терминов {0} " ,sum);
             Console.Read();
-          
         }
     }
     
