@@ -6,19 +6,16 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            Console.Write("Длина пирамиды ");
+            int sum = 0, t = 9;
+            Console.Write("Введите количество терменов ");
             int a = Convert.ToInt32(Console.ReadLine());
-            for(int i = 0; i < a; i++)
+            for(int i = 1; i <=a; i++)
             {
-                for(int j=1; j<=a-i; j++ )
-                Console.Write(" ");
-                    for(int j=1; j<=2*i-1; j++)
-                     Console.Write("*");
-                Console.Write("\n");
+                sum += t;
+                Console.WriteLine("{0} ", t);
+                t = t * 10 + 9;
             }
-            
-           
-            
+            Console.Write("Количество терминов {0} " ,sum);
             Console.Read();
           
         }
