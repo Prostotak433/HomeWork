@@ -6,23 +6,17 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int q, p;
-            Console.Write("Введите количество терменов ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            for(int i = 1; i <=a; i++)
+            double sum = 1, peremen = 1;
+            Console.Write("Введите значение Х: ");
+            double x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите количество терминов: ");
+            double a = Convert.ToInt32(Console.ReadLine());
+            for(double i = 1; i<a;i++)
             {
-                if (i % 2 == 0) { p = 1; q = 0; }
-                else {  p = 0;  q = 1; }
-
-                for (int j = 1; j <= i; j++)
-                {
-                    if (j % 2 == 0)
-                        Console.Write("{0} ", p);
-                    else
-                        Console.Write("{0} ", q);
-                }
-                Console.Write("\n");
+                peremen = peremen * x / i;
+                sum = sum + peremen;
             }
+            Console.Write("\nCумма {0}\nКоличество терминов {1}\nЗначение Х: {2} ", sum, a, x);
             Console.Read();
         }
     }
