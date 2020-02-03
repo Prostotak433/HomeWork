@@ -6,18 +6,27 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum = 0;
-            Console.Write("Введите число : ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= a; i++)
+            int n, i, sum;
+          
+            Console.Write("Введите начальный диапазон или число : ");
+            int mn = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите конечный диапазон числа : ");
+            int mx = Convert.ToInt32(Console.ReadLine());
+            for (n = mn; n <= mx; n++)
             {
-                if (a % i == 0)
+                i = 1;
+                sum = 0;
+                while (i < n)
                 {
-                    sum += i;
-                    Console.Write("{0} ", i);
+                    if (n % i == 0)
+                        sum = sum + i;
+                    i++;
                 }
+                if (sum == n)
+                    Console.Write("{0} ", n);
             }
-            Console.Write("Сумма делителей {0} ", sum);
+            Console.Write("\n");
         }
     }
 }
+
