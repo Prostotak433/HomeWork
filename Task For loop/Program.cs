@@ -6,16 +6,16 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum = 0, j;
+            int sum = 0, j=1;
             Console.Write("Введите количество терминов : ");
             int a = Convert.ToInt32(Console.ReadLine());
             for(int i =1; i<=a;i++)
             {
-                j = i * i;
+                sum += j;
                 Console.Write("{0} ", j);
-                sum = sum + j;
+                j = j * 10 + 1;
             }
-            Console.Write("Натуральное число квадрата до {0} терминов = {1} ", a, sum);
+            Console.Write("Натуральное число квадрата до {0} терминов = {1} ", j, sum);
         }
     }
 }
