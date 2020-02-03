@@ -6,26 +6,19 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int n, i, sum;
-          
-            Console.Write("Введите начальный диапазон или число : ");
-            int mn = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите конечный диапазон числа : ");
-            int mx = Convert.ToInt32(Console.ReadLine());
-            for (n = mn; n <= mx; n++)
+            int num, r, sum = 0, temp;
+                        Console.Write("Input  a number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (temp = num; num != 0; num = num / 10)
             {
-                i = 1;
-                sum = 0;
-                while (i < n)
-                {
-                    if (n % i == 0)
-                        sum = sum + i;
-                    i++;
-                }
-                if (sum == n)
-                    Console.Write("{0} ", n);
+                r = num % 10;
+                sum = sum + (r * r * r);
             }
-            Console.Write("\n");
+            if (sum == temp)
+                Console.Write("{0} is an Armstrong number.\n", temp);
+            else
+                Console.Write("{0} is not an Armstrong number.\n", temp);
         }
     }
 }
