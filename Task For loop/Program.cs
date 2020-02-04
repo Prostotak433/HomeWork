@@ -6,24 +6,16 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum;
-            Console.Write("Введите начальный номер диапазона: ");
-            int nmin = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите конечный номер диапазона: ");
-            int nmax = Convert.ToInt32(Console.ReadLine());
-            for(int i=nmin; i<=nmax; i++)
+            int sum = 0, num1 = 0, num2 = 1;
+            Console.Write("Введите количество членов ряда Фибоначи: ");
+            int afib = Convert.ToInt32(Console.ReadLine());
+            Console.Write("{0}  {1} ", num1, num2);
+            for(int i =3; i<=afib; i++)
             {
-                sum = 0;
-                for(int j=2; j<=i/2;j++)
-                {
-                    if (i % j == 0)
-                    {
-                        sum++;
-                        break;
-                    }
-                }
-                if (sum == 0 && i != 1)
-                    Console.Write("{0} ", i);
+                sum = num1 + num2;
+                Console.Write("{0} ",sum);
+                num1 = num2;
+                num2 = sum;
             }
             Console.Write("\n");
         }
