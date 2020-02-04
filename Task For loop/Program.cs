@@ -6,26 +6,23 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            bool prost = true;
-            Console.Write("Введите число : ");
+            int sum = 0;
+            Console.Write("Введите количество строк : ");
             int a = Convert.ToInt32(Console.ReadLine());
-            for(int i=2; i<=a/2; i++)   
+            for (int i = 0; i < a; i++)
             {
-                if(a%i==0)
+                for (int j = 1; j <= a - i; j++)
+                    Console.Write("  ");
+                for (int n = 0; n <= i; n++)
                 {
-                    prost = false;
-                    break;
+                    if (n == 0 || i == 0)
+                        sum = 1;
+                    else
+                        sum = sum * (i - n + 1) / n;
+                    Console.Write("{0}    ", sum);
                 }
+                Console.Write("\n");
             }
-            if (prost)
-            {
-                Console.WriteLine("Число простое");
-            }
-            else
-            {
-                Console.WriteLine("Число не простое");
-            }
-            Console.ReadKey();
         }
     }
 }
