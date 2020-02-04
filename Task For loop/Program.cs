@@ -6,28 +6,23 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int num, r, sum, temp;
-            int stno, enno;
-            Console.Write("Input starting number of range: ");
-            stno = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Input ending number of range : ");
-            enno = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Armstrong numbers in given range are: ");
-            for (num = stno; num <= enno; num++)
+            Console.Write("Введите длину ромба : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < a; i++)
             {
-                temp = num;
-                sum = 0;
-
-                while (temp != 0)
-                {
-                    r = temp % 10;
-                    temp = temp / 10;
-                    sum = sum + (r * r * r);
-                }
-                if (sum == num)
-                    Console.Write("{0} ", num);
+                for (int j = 1; j <= a - i; j++)
+                    Console.Write(" ");
+                for (int j = 1; j <= 2 * i - 1; j++)
+                    Console.Write("*");
+                Console.Write("\n");
+            }
+            for (int i=a-1; i>=1; i--)
+            {
+                for(int j=1; j<=a-i; j++)
+                    Console.Write(" ");
+                for(int j=1; j<=2*i-1; j++)
+                    Console.Write("*");
+                    Console.Write("\n");
             }
         }
     }
