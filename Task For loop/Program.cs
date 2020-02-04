@@ -6,25 +6,28 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите длину ромба : ");
+            bool prost = true;
+            Console.Write("Введите число : ");
             int a = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < a; i++)
+            for(int i=2; i<=a/2; i++)   
             {
-                for (int j = 1; j <= a - i; j++)
-                    Console.Write(" ");
-                for (int j = 1; j <= 2 * i - 1; j++)
-                    Console.Write("*");
-                Console.Write("\n");
+                if(a%i==0)
+                {
+                    prost = false;
+                    break;
+                }
             }
-            for (int i=a-1; i>=1; i--)
+            if (prost)
             {
-                for(int j=1; j<=a-i; j++)
-                    Console.Write(" ");
-                for(int j=1; j<=2*i-1; j++)
-                    Console.Write("*");
-                    Console.Write("\n");
+                Console.WriteLine("Число простое");
             }
+            else
+            {
+                Console.WriteLine("Число не простое");
+            }
+            Console.ReadKey();
         }
     }
 }
+
 
