@@ -6,21 +6,20 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int sum = 0;
+            int sum = 0, i;
             Console.Write("Введите число : ");
             int a = Convert.ToInt32(Console.ReadLine());
-            for (int i = a; i != 0; i = i / 10)
+            for ( i = a; i != 0; i = i / 10)
             {
                 int r = i % 10;
                 sum = sum * 10 + r;
             }
-            Console.Write("{0} \n", sum);
+            if (i == sum)
+                Console.Write("Полиндром {0} ", i);
+            else
+                Console.Write("Не полиндром {0} ", i);
 
-            // код не из книги
-            Console.Write(a % 10);
-            while ((a /= 10) != 0)
-                Console.Write(a % 10);
-        }
+        }    
     }
 }
 
