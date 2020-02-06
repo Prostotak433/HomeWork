@@ -6,20 +6,20 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int j, i, a;
-            Console.Write("Длина пирамиды : ");
-             a = Convert.ToInt32(Console.ReadLine());
-            for ( i = 0; i <= a; i++)
-            { 
-                for ( j = 1; j <= a - i; j++)
-                    Console.Write(" ");
-                for ( j = 1; j <= i; j++)
-                    Console.Write("{0} ", j);
-                for ( j = i - 1; j >= 1; j--)
-                    Console.Write("{0} ", j);
-
-                Console.Write("\n");
+            int sum = 0;
+            Console.Write("Введите число : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            for (int i = a; i != 0; i = i / 10)
+            {
+                int r = i % 10;
+                sum = sum * 10 + r;
             }
+            Console.Write("{0} \n", sum);
+
+            // код не из книги
+            Console.Write(a % 10);
+            while ((a /= 10) != 0)
+                Console.Write(a % 10);
         }
     }
 }
