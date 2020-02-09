@@ -6,22 +6,21 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            int deli = 1;
+            int lcm= 1;
             Console.Write("Введите 1-ое число: ");
             int a1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 2-ое число: ");
             int a2 = Convert.ToInt32(Console.ReadLine());
             int j = (a1 < a2) ? a1 : a2;
-            for(int i=1; i<=j; i++)
+            for (int i = j; ; i += j)
             {
-                if(a1%i==0 && a2%i==0)
+                if ( i % a1 == 0 && i % a2 == 0)
                 {
-                    deli = i;
-                    Console.WriteLine("{0} ", deli);
+                    lcm = i;
+                    break;
                 }
             }
-            int lsm = (a1 * a2) / deli;
-            Console.Write("Количество делителей {0} i {1} равно {2} ", a1, a2, lsm);
+            Console.Write("Количество делителей {0} i {1} равно {2} ", a1, a2, lcm);
         }    
     }
 }
