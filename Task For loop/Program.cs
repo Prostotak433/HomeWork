@@ -20,7 +20,8 @@ namespace Task_For_loop
                     Console.WriteLine("{0} ", deli);
                 }
             }
-            Console.Write("Количество делителей {0} i {1} равно {2} ", a1, a2, deli);
+            int lsm = (a1 * a2) / deli;
+            Console.Write("Количество делителей {0} i {1} равно {2} ", a1, a2, lsm);
         }    
     }
 }
