@@ -6,22 +6,29 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число: ");
+            Console.Write("Введите начало диапазона: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            int a1 = a,a2=0, fact;
-            for(int i = a; i>0; i=i/10)
+            Console.Write("Введите конец диапазона: ");
+            int a1 = Convert.ToInt32(Console.ReadLine());
+            int fact, a2 = 0,b1=0;
+            for (int b = a; b <= a1; b++)
             {
-                fact = 1;
-                for(int j=1; j<=i%10 ;j++)
+                b1 = b;
+                
+                for (int i = b; i > 0; i = i / 10)
                 {
-                    fact = fact * j;
+                    fact = 1;
+                    for (int j = 1; j <= i % 10; j++)
+                    {
+                        fact = fact * j;
+                    }
+                    a2 = a2 + fact;
                 }
-                a2 = a2 + fact;
             }
-            if (a1 == a2)
-                Console.Write("Сильное число {0} ", a1);
-            else
-                Console.Write("Число не сильное {0} ", a1);
+            
+            if (a2 == b1)
+                Console.Write("{0} ", b1);
+            
         }    
     }
 }
