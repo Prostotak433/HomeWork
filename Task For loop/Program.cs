@@ -6,17 +6,22 @@ namespace Task_For_loop
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число в двоичном виде : ");
+            Console.Write("Введите число: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            double a1= a, sum = 0, i = 0;
-            while(a!=0)
+            int a1 = a,a2=0, fact;
+            for(int i = a; i>0; i=i/10)
             {
-                int d = a % 10;
-                sum = sum + d * Math.Pow(2, i);
-                a = a / 10;
-                i++;
+                fact = 1;
+                for(int j=1; j<=i%10 ;j++)
+                {
+                    fact = fact * j;
+                }
+                a2 = a2 + fact;
             }
-            Console.Write("Введенное число в двоичной системе {0} имеет вид в 10 -ой системе {1} ", a1,sum);
+            if (a1 == a2)
+                Console.Write("Сильное число {0} ", a1);
+            else
+                Console.Write("Число не сильное {0} ", a1);
         }    
     }
 }
