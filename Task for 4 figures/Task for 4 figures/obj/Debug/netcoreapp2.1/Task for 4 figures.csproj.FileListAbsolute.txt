@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\bin\Debug\netcoreapp2.1\Task for 4 figures.deps.json
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\bin\Debug\netcoreapp2.1\Task for 4 figures.runtimeconfig.json
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\bin\Debug\netcoreapp2.1\Task for 4 figures.runtimeconfig.dev.json
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\bin\Debug\netcoreapp2.1\Task for 4 figures.dll
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\bin\Debug\netcoreapp2.1\Task for 4 figures.pdb
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.AssemblyInfo.cs
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.dll
+D:\Repository\HomeWork\Task for 4 figures\Task for 4 figures\obj\Debug\netcoreapp2.1\Task for 4 figures.pdb
