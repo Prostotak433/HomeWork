@@ -6,40 +6,46 @@ namespace Task_for_4_figures
     {
         static void Main(string[] args)
         {
-            Square square = new Square("ABDC", "Red");
-            square.Display();
-            
+            Square square = new Square("Red");
+            double s = square.Area(3);
+            Console.WriteLine(s);
             
         } 
     }
-
-    class Figure
+    class Square
     {
-        public string Name { get; set; }
         public string Color { get; set; }
-        public Figure(string name, string color)
+        public Square(string color)
         {
-            Name = name;
             Color = color;
         }
-        public virtual void Display()
+        public virtual double Area(double a)
         {
-            Console.Write("Name = {0}, Color = {1} ", Name, Color);
+            return a*a;
         }
     }
-    class Square:Figure
-    {
-        public Square(string name, string color) : base(name, color) { }
-        static int Area()
+    class Rectangle : Square
+    {    
+        public Rectangle(string color): base(color) { }
+        public virtual double Area(double a, double b)
         {
-            int a = 3;
-            int s1 = a * a;
-            return s1;
-            
+            return a * b;
         }
-        public override void Display()
+    }
+    class Triangle:Square
+    {
+        public Triangle(string color) : base(color) { }
+        public virtual double Area(double a, double h)
         {
-            Console.Write("Name = {0}, Color = {1}, Area = {2} ", Name, Color);
+            return 1 / 2 * a * h;
+        }
+    }
+    class Circle : Square
+    {
+        public Circle(string color) : base(color) { }
+        public override double Area(double r)
+        {
+            return 3.14 * r * r;
         }
     }
 
