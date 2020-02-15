@@ -18,6 +18,18 @@ namespace Task_for_4_figures
             Circle circle = new Circle("Yellow");
             double s4 = circle.Area(3);
             Console.Write("\nПлощадь круг = {0} ", s4);
+
+            double[] i =  { s1, s2, s3, s4 };
+            double max = double.MinValue;
+            for (int j = 0; j < i.Length; j++)
+            {
+                if (i[j] > max)
+                {
+                    max = i[j];
+                }
+            }
+            Console.WriteLine("\nНайбольшая площадь  {0} ", max);
+
         } 
     }
     class Square
