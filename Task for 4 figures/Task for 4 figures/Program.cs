@@ -9,7 +9,7 @@ namespace Task_for_4_figures
             Figure figure = new Figure();
             IFigure square = figure.create("Square");
             double s1= square.Area();
-            IFigure rectangle = figure.create("Reactangle");
+            IFigure rectangle = figure.create("Rectangle");
             double s2 = rectangle.Area();
             IFigure triangle = figure.create("Triangle");
             double s3 = rectangle.Area();
