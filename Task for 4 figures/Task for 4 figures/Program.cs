@@ -17,7 +17,16 @@ namespace Task_for_4_figures
             double s4 = rectangle.Area();
             Console.Write("Фигура {0} имеет площадь {1}\nФигура {2} имеет площадь {3}\nФигури {4} имеет площадь {5}\n" +
                 "Фигури {6} имеет площадь {7} ", square, s1, rectangle, s2, triangle, s3, circle, s4);
-
+            double[] i = { s1, s2, s3, s4 };
+            double max = double.MinValue;
+            for (int j = 0; j < i.Length; j++)
+            {
+                if (i[j] > max)
+                {
+                    max = i[j];
+                }
+            }
+            Console.Write("\nНайбольшая площадь  {0} ", max);
 
         } 
     }
