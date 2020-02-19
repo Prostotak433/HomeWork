@@ -12,9 +12,9 @@ namespace Task_for_4_figures
             IFigure rectangle = figure.create("Rectangle");
             double s2 = rectangle.Area();
             IFigure triangle = figure.create("Triangle");
-            double s3 = rectangle.Area();
+            double s3 = triangle.Area();
             IFigure circle = figure.create("Circle");
-            double s4 = rectangle.Area();
+            double s4 = circle.Area();
             Console.Write("Фигура {0} имеет площадь {1}\nФигура {2} имеет площадь {3}\nФигури {4} имеет площадь {5}\n" +
                 "Фигури {6} имеет площадь {7} ", square, s1, rectangle, s2, triangle, s3, circle, s4);
             double[] i = { s1, s2, s3, s4 };
