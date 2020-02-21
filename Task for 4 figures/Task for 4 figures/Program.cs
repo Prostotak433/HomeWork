@@ -7,26 +7,11 @@ namespace Task_for_4_figures
         static void Main(string[] args)
         {
             Figure figure = new Figure();
-            IFigure square = figure.create("Square");
+            Square square = (Square)figure.create("Square");
             double s1= square.Area();
-            IFigure rectangle = figure.create("Rectangle");
-            double s2 = rectangle.Area();
-            IFigure triangle = figure.create("Triangle");
-            double s3 = triangle.Area();
-            IFigure circle = figure.create("Circle");
-            double s4 = circle.Area();
-            Console.Write("Фигура {0} имеет площадь {1}\nФигура {2} имеет площадь {3}\nФигури {4} имеет площадь {5}\n" +
-                "Фигури {6} имеет площадь {7} ", square, s1, rectangle, s2, triangle, s3, circle, s4);
-            double[] i = { s1, s2, s3, s4 };
-            double max = double.MinValue;
-            for (int j = 0; j < i.Length; j++)
-            {
-                if (i[j] > max)
-                {
-                    max = i[j];
-                }
-            }
-            Console.Write("\nНайбольшая площадь  {0} ", max);
+            
+            Console.Write("Фигура {0} имеет площадь {1} ", square, s1);
+            
 
         } 
     }
