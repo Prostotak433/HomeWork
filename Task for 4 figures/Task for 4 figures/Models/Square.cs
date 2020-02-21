@@ -4,7 +4,17 @@ using System.Text;
 
 namespace Task_for_4_figures
 {
-    class Square
+    class Square : IFigure
     {
+        double z, a = 3;
+        public double Area()
+        {
+            z = a * a;
+            return z;
+        }
+        public void Info()
+        {
+            Console.Write("Площадь Квадрата = {0} ", z);
+        }
     }
 }
