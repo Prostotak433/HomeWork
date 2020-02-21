@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Task_for_4_figures
 {
-    class Circle
+    class Circle : IFigure
     {
         double z, r = 3;
         public double Area()
@@ -14,7 +14,7 @@ namespace Task_for_4_figures
         }
         public void Info()
         {
-            Console.Write("Площадь Круга = {0} ", z);
+            Console.WriteLine("Площадь Круга = {0} ", z);
         }
     }
 }

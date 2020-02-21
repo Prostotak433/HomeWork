@@ -14,7 +14,7 @@ namespace Task_for_4_figures
         }
         public void Info()
         {
-            Console.Write("Площадь Квадрата = {0} ", z);
+            Console.WriteLine("Площадь Квадрата = {0} ", z);
         }
     }
 }
