@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Figure.Inheritance\bin\Debug\netcoreapp2.1\Figure.Inheritance.deps.json
+D:\Repository\HomeWork\Figure.Inheritance\bin\Debug\netcoreapp2.1\Figure.Inheritance.runtimeconfig.json
+D:\Repository\HomeWork\Figure.Inheritance\bin\Debug\netcoreapp2.1\Figure.Inheritance.runtimeconfig.dev.json
+D:\Repository\HomeWork\Figure.Inheritance\bin\Debug\netcoreapp2.1\Figure.Inheritance.dll
+D:\Repository\HomeWork\Figure.Inheritance\bin\Debug\netcoreapp2.1\Figure.Inheritance.pdb
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.AssemblyInfo.cs
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.dll
+D:\Repository\HomeWork\Figure.Inheritance\obj\Debug\netcoreapp2.1\Figure.Inheritance.pdb
