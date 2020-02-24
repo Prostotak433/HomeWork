@@ -12,5 +12,9 @@ namespace Figure.Inheritance
                 _radius = radius;
         }
         public double Area() { return 3.14 * _radius * _radius; }
+        public override string ToString()
+        {
+            return $"Площадь круга = {Area()}";
+        }
     }
 }

@@ -13,5 +13,9 @@ namespace Figure.Inheritance
             _sideB = sideB;
         }
         public double Area() { return _sideA * _sideB; }
+        public override string ToString()
+        {
+            return $"Площадь прямоугольника = {Area()}";
+        }
     }
 }
