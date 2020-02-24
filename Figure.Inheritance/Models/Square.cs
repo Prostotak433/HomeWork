@@ -12,5 +12,9 @@ namespace Figure.Inheritance
            _sideA = sideA;
         }
         public double Area() { return _sideA * _sideA; }
+        public override string ToString()
+        {
+            return $"{Area()}";
+        }
     }
 }

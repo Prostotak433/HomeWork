@@ -6,7 +6,8 @@ namespace Figure.Inheritance
     {
         static void Main(string[] args)
         {
-            
+            IFigure square = new Square(4);
+            Console.WriteLine(square.ToString());
         }
     }
 }
