@@ -6,7 +6,8 @@ namespace Figure.Inheritance
 {
     interface IFigure
     {
-         double Area();
+        double Area();
+        string ToString();
         
     }
 }

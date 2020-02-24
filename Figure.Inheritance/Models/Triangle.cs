@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Figure.Inheritance
 {
-    class Triangle
+    class Triangle : IFigure
     {
         private double _base, _height;
         public Triangle(double height, double baseA)

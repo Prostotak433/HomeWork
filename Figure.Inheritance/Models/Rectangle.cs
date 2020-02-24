@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Figure.Inheritance
 {
-    class Rectangle
+    class Rectangle : IFigure
     {
         private double _sideA, _sideB;
         public Rectangle(double sideA, double sideB)

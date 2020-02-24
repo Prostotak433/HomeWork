@@ -9,12 +9,12 @@ namespace Figure.Inheritance
         private double _sideA;
         public Square(double sideA)
         {
-           _sideA = sideA;
+            _sideA = sideA;
         }
         public double Area() { return _sideA * _sideA; }
         public override string ToString()
         {
-            return $"Площадь квадрата = {Area()}";
+            return $"Площадь квадрата = {Area()} ";
         }
     }
 }
