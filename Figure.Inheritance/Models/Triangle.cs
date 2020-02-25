@@ -15,7 +15,7 @@ namespace Figure.Inheritance
         public double Area() { return (_base * _height) / 2; }
         public override string ToString()
         {
-            return $"Площадь треугольника = {Area()}";
+            return $"Area of a Triangle = {Area()}";
         }
     }
 }
