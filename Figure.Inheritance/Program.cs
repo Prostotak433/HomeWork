@@ -15,9 +15,9 @@ namespace Figure.Inheritance
             IFigure[] figures = new IFigure[] { square, rectangle, circle,triangle };
             Array.Sort(figures, new FigureComparer());
 
-            foreach (Person p in people)
+            foreach (IFigure figure in figures)
             {
-                Console.WriteLine($"{p.Name} - {p.Age}");
+                Console.WriteLine(figure.Area());
             }
         }
     }
