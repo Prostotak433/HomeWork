@@ -12,12 +12,13 @@ namespace Figure.Inheritance
             IFigure triangle = new Triangle(2, 4);
             IFigure circle = new Circle(4);
 
-            var figures = new List<IFigure>() { new Square(4), rectangle };
-            foreach (IFigure figure in figures)
-            {
-                figure.ToString();
-            }
+            IFigure[] figures = new IFigure[] { square, rectangle, circle,triangle };
+            Array.Sort(figures, new FigureComparer());
 
+            foreach (Person p in people)
+            {
+                Console.WriteLine($"{p.Name} - {p.Age}");
+            }
         }
     }
 }
