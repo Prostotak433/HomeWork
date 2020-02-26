@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Inheritance", "Figure.Inheritance.csproj", "{563BDDDE-D099-409B-9C67-ECE73677DBE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Inheritance", "Figure.Inheritance.csproj", "{563BDDDE-D099-409B-9C67-ECE73677DBE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{BB29FC5D-8B2D-4DB9-A7AE-96EF10671BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{563BDDDE-D099-409B-9C67-ECE73677DBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{563BDDDE-D099-409B-9C67-ECE73677DBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{563BDDDE-D099-409B-9C67-ECE73677DBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB29FC5D-8B2D-4DB9-A7AE-96EF10671BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB29FC5D-8B2D-4DB9-A7AE-96EF10671BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB29FC5D-8B2D-4DB9-A7AE-96EF10671BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB29FC5D-8B2D-4DB9-A7AE-96EF10671BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
