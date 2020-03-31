@@ -1,0 +1,11 @@
+D:\Repository\HomeWork\Test.GitIgnore\bin\Debug\netcoreapp2.1\Test.GitIgnore.deps.json
+D:\Repository\HomeWork\Test.GitIgnore\bin\Debug\netcoreapp2.1\Test.GitIgnore.runtimeconfig.json
+D:\Repository\HomeWork\Test.GitIgnore\bin\Debug\netcoreapp2.1\Test.GitIgnore.runtimeconfig.dev.json
+D:\Repository\HomeWork\Test.GitIgnore\bin\Debug\netcoreapp2.1\Test.GitIgnore.dll
+D:\Repository\HomeWork\Test.GitIgnore\bin\Debug\netcoreapp2.1\Test.GitIgnore.pdb
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.csprojAssemblyReference.cache
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.csproj.CoreCompileInputs.cache
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.AssemblyInfoInputs.cache
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.AssemblyInfo.cs
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.dll
+D:\Repository\HomeWork\Test.GitIgnore\obj\Debug\netcoreapp2.1\Test.GitIgnore.pdb
