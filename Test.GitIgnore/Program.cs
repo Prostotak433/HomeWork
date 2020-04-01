@@ -16,6 +16,10 @@ namespace w3resource.Task.ForLoop
             long temp1 = Convert.ToInt64(num1, 8);
             Console.WriteLine("{0} : восьмеричная : {1}", num1, Convert.ToString(temp1, 2));
 
+            Console.WriteLine("Число в 10");
+            long num3 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("{0} : десятичная : {1}", num3, Convert.ToString(num3, 16));
+
         }
     }
 }
