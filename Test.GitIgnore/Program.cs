@@ -1,25 +1,23 @@
 ﻿using System;
 
-namespace w3resource.Task.ForLoop
+namespace Test.GitIgnore
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Число в 10 системе ");
-            string num = Convert.ToString(Console.ReadLine());
-            long temp = Convert.ToInt64(num, 2);
-            Console.WriteLine("{0} : двоичная : {1}", num, Convert.ToString(temp, 8));
-
-            Console.WriteLine("Конвертируем в двоичную систему счисления:\n");
-            string num1 = Convert.ToString(Console.ReadLine());
-            long temp1 = Convert.ToInt64(num1, 8);
-            Console.WriteLine("{0} : восьмеричная : {1}", num1, Convert.ToString(temp1, 2));
-
-            Console.WriteLine("Число в 10");
-            long num3 = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("{0} : десятичная : {1}", num3, Convert.ToString(num3, 16));
-
+            Welcom();
+            HaveANiceDay();
         }
+        public static void Welcom()
+        {
+            Console.WriteLine("Welcome Friends!");
+        }
+        public static void HaveANiceDay()
+        {
+            Console.WriteLine("Have a nice day!");
+        }
+            
+
     }
 }
