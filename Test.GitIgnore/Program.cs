@@ -6,12 +6,14 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Welcom();
+            Console.Write("Please input a name: ");
+            string name = Convert.ToString(Console.ReadLine());
+            Welcom(name);
             HaveANiceDay();
         }
-        public static void Welcom()
+        public static void Welcom(string name)
         {
-            Console.WriteLine("Welcome Friends!");
+            Console.WriteLine("Welcome Friend" + name+"!");
         }
         public static void HaveANiceDay()
         {
