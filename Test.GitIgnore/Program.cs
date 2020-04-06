@@ -6,17 +6,22 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter another number: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The sum of two numbers is : {0}", Sum(a, b));
+            Console.Write("Please input a string : ");
+            string text = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("\""+text+"\""+ "contains {0} spaces", Space(text));
+
         }
-        public static int Sum(int a, int b)
+        public static int Space(string str)
         {
-            int result;
-            result = a + b;
-            return result;
+            int res = 0;
+            string str1;
+            for(int i = 0; i < str.Length; i++)
+            {
+                str1 = str.Substring(i, 1);
+                if (str1 == " ")
+                    res++;
+            }
+            return res;
         }
     }
 }
