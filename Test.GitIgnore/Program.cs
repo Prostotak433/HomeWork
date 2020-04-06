@@ -6,20 +6,17 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Please input a name: ");
-            string name = Convert.ToString(Console.ReadLine());
-            Welcom(name);
-            HaveANiceDay();
+            Console.Write("Enter a number: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter another number: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The sum of two numbers is : {0}", Sum(a, b));
         }
-        public static void Welcom(string name)
+        public static int Sum(int a, int b)
         {
-            Console.WriteLine("Welcome Friend" + name+"!");
+            int result;
+            result = a + b;
+            return result;
         }
-        public static void HaveANiceDay()
-        {
-            Console.WriteLine("Have a nice day!");
-        }
-            
-
     }
 }
