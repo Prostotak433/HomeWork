@@ -6,21 +6,20 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            int[] mass = new int[5];
-            Console.WriteLine("Input 5 elements in the array : ");
-            for(int j = 0; j < 5; j++)
-            {
-                Console.Write("element - {0} : ", j);
-                mass[j] = Convert.ToInt32(Console.ReadLine());
-            }
-            Console.WriteLine("The sum of the elements of the array is : {0}", Sum(mass));
+            Console.WriteLine("Enter a number: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter another number: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Rever(ref a, ref b);
+            Console.WriteLine("Now the 1st number is : {0}, and the 2nd number is : {1}", a, b);
         }
-       public static int Sum(int[] mass)
+        public static void Rever(ref int a, ref int b)
         {
-            int result = 0;
-            for (int i = 0; i < mass.Length; i++)
-                result += mass[i];
-            return result;
+            int c = 0;
+            c = a;
+            a = b;
+            b = c;
+            
         }
     }
 }
