@@ -8,17 +8,14 @@ namespace Test.GitIgnore
         {
             Console.WriteLine("Enter a number: ");
             int num = int.Parse(Console.ReadLine());
-            Console.WriteLine("The sum of the digits of the number {0} is : {1}", num, Sum(num)); 
-
-
+            Console.WriteLine("{0}   {1}", num,Factorial(num)); 
         }
-        public static int Sum(int num1)
+        public static int Factorial(int num1)
         {
-            int sum = 0;
-            string nums = Convert.ToString(num1);
-            for (int i = 0; i < nums.Length; i++)
-                sum += int.Parse(nums.Substring(i,1));
-            return sum;
+            if (num1 == 0)
+                return 1;
+            else
+                return num1 * Factorial(num1 - 1);
         }
     }
 }
