@@ -6,26 +6,34 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input number of Fibonacci Series : ");
-            decimal a = decimal.Parse(Console.ReadLine());
-            
-            for(int i = 0; i < a; i++)
-            {
-                Console.Write(Fibonach(i) + "  ");
-            }
-            Console.ReadLine();
+            Console.WriteLine("Input a number : ");
+            int num = int.Parse(Console.ReadLine());
+            if (number(num))
+                Console.WriteLine(num + " is a prime number");
+            else
+                Console.WriteLine(num + " is not a prime number");
         }
-        public static decimal Fibonach(decimal a1)
+        public static bool number(int num1)
         {
-            decimal num1 = 0;
-            decimal num2 = 1;
-            for(int i = 0; i < a1; i++)
+            var result = true;
             {
-                decimal  temp = num1;
-                num1 = num2;
-                num2 = num1 + temp;
+                if(num1 > 1)
+                {
+                    for(var i = 2; i < num1; i++)
+                    {
+                        if (num1 % i == 0)
+                        {
+                            result = false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    result = false;
+                }
+                return result;
             }
-            return num1;
         }
     }
 }
