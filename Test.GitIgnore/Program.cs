@@ -6,34 +6,19 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input a number : ");
+            Console.WriteLine("Enter a number: ");
             int num = int.Parse(Console.ReadLine());
-            if (number(num))
-                Console.WriteLine(num + " is a prime number");
-            else
-                Console.WriteLine(num + " is not a prime number");
+            Console.WriteLine("The sum of the digits of the number {0} is : {1}", num, Sum(num)); 
+
+
         }
-        public static bool number(int num1)
+        public static int Sum(int num1)
         {
-            var result = true;
-            {
-                if(num1 > 1)
-                {
-                    for(var i = 2; i < num1; i++)
-                    {
-                        if (num1 % i == 0)
-                        {
-                            result = false;
-                            break;
-                        }
-                    }
-                }
-                else
-                {
-                    result = false;
-                }
-                return result;
-            }
+            int sum = 0;
+            string nums = Convert.ToString(num1);
+            for (int i = 0; i < nums.Length; i++)
+                sum += int.Parse(nums.Substring(i,1));
+            return sum;
         }
     }
 }
