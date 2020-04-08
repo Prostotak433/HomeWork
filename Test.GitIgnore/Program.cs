@@ -8,14 +8,15 @@ namespace Test.GitIgnore
         {
             Console.WriteLine("Enter a number: ");
             int num = int.Parse(Console.ReadLine());
-            Console.WriteLine("{0}   {1}", num,Factorial(num)); 
+            Console.WriteLine("The Fibonacci of {0} th term is {1}", num, Fibonachi(num));
+            
         }
-        public static int Factorial(int num1)
+        public static int Fibonachi(int num1)
         {
-            if (num1 == 0)
+            if (num1 <= 2)
                 return 1;
             else
-                return num1 * Factorial(num1 - 1);
+                return Fibonachi(num1 - 1) + Fibonachi(num1 - 2);
         }
     }
 }
