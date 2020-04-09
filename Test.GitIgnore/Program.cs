@@ -6,17 +6,12 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number: ");
-            int num = int.Parse(Console.ReadLine());
-            Console.WriteLine("The Fibonacci of {0} th term is {1}", num, Fibonachi(num));
-            
-        }
-        public static int Fibonachi(int num1)
-        {
-            if (num1 <= 2)
-                return 1;
-            else
-                return Fibonachi(num1 - 1) + Fibonachi(num1 - 2);
+            Number number = new Number();
+            number.x = 20;
+            number.y = 20;
+            int sum = number.x + number.y;
+            Console.Write("The sum of x and y is {0}\n" ,sum);
+            Console.Read();
         }
     }
 }
