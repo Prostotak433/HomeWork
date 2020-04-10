@@ -6,11 +6,28 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Number number = new Number();
-            Number.x = 10;
-            Number.y = 30;
-            int sum = Number.x + Number.y;
-            Console.Write("The sum of x and y is {0}\n" ,sum);
+            Console.WriteLine("Количество людей: ");
+            int people = int.Parse(Console.ReadLine());
+            
+            Number[] numb = new Number[people];
+            for(int i = 0; i < people; i++)
+            {
+                Console.Write("Name of the employee : ");
+                string name = Console.ReadLine();
+                numb[i].Name = name;
+
+                Console.Write("Input day of the birth : ");
+                int day = int.Parse(Console.ReadLine());
+                numb[i].Day = day;
+
+                Console.Write("Input month of the birth : ");
+                int month = int.Parse(Console.ReadLine());
+                numb[i].Month = month;
+
+                Console.Write("Input year for the birth : ");
+                int year = int.Parse(Console.ReadLine());
+                numb[i].Year = year;
+            }
             Console.Read();
         }
     }
