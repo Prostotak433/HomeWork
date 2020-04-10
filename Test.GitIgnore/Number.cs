@@ -6,9 +6,12 @@ namespace Test.GitIgnore
 {
     struct Number
     {
-        public string Name;
-        public int Day;
-        public int Month;
-        public int Year;
+        public int x;
+        public int y;
+    }
+    class Number2
+    {
+        public int x;
+        public int y;
     }
 }        

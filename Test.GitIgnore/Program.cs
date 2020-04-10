@@ -6,29 +6,14 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Количество людей: ");
-            int people = int.Parse(Console.ReadLine());
-            
-            Number[] numb = new Number[people];
-            for(int i = 0; i < people; i++)
-            {
-                Console.Write("Name of the employee : ");
-                string name = Console.ReadLine();
-                numb[i].Name = name;
-
-                Console.Write("Input day of the birth : ");
-                int day = int.Parse(Console.ReadLine());
-                numb[i].Day = day;
-
-                Console.Write("Input month of the birth : ");
-                int month = int.Parse(Console.ReadLine());
-                numb[i].Month = month;
-
-                Console.Write("Input year for the birth : ");
-                int year = int.Parse(Console.ReadLine());
-                numb[i].Year = year;
-            }
-            Console.Read();
+            Number2 classNumber = new Number2();
+            classNumber.x = 7500;
+            classNumber.y = 9500;
+            Console.Write("Assign in Class:  x: {0}, y: {1}", classNumber.x, classNumber.y);
+            Number structNumber = new Number();
+            structNumber.x = 750;
+            structNumber.y = 950;
+            Console.Write("\nAssign in Struct:  x: {0}, y: {1}", structNumber.x, structNumber.y);
         }
     }
 }
