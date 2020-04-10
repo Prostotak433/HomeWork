@@ -6,10 +6,11 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            SructNumber sructNumber = new SructNumber();
-            sructNumber.Info();
-            SructNumber sructNumber1 = new SructNumber(25, 25);
-            sructNumber1.Info();
+            SructNumber number;
+            number.n = 30;
+            number.m = 40;
+            number.Info();
         }
+        
     }
 }

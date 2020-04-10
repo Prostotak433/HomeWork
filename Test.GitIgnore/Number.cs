@@ -5,7 +5,8 @@ namespace Test.GitIgnore
 {
     struct SructNumber
     {
-        public int n, m;
+        public int n;
+        public int m;
         public SructNumber(int n1, int m1)
         {
             n = n1;
@@ -13,7 +14,7 @@ namespace Test.GitIgnore
         }
         public void Info()
         {
-            Console.WriteLine("m = {0}, n = {1}", n, m);
+            Console.WriteLine("m = {0}, n = {1}", m,n);
         }
     }
 }        
