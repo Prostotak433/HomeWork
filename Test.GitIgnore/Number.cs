@@ -1,16 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Test.GitIgnore
 {
-    struct StructNumber
+    struct SructNumber
     {
-        private int _num;
-        public int num { get; set; }
+        public int n, m;
+        public SructNumber(int n1, int m1)
+        {
+            n = n1;
+            m = m1;
+        }
         public void Info()
         {
-            Console.WriteLine("\nThe stored value is: {0}\n", num);
+            Console.WriteLine("m = {0}, n = {1}", n, m);
         }
     }
 }        

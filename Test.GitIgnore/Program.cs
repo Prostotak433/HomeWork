@@ -6,9 +6,10 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            StructNumber structNumber = new StructNumber();
-            structNumber.num = 15;
-            structNumber.Info();
+            SructNumber sructNumber = new SructNumber();
+            sructNumber.Info();
+            SructNumber sructNumber1 = new SructNumber(25, 25);
+            sructNumber1.Info();
         }
     }
 }
