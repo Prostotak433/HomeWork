@@ -6,21 +6,11 @@ namespace Test.GitIgnore
 {
     struct StructNumber
     {
-        public int n;
-    }
-    class ClassNumber
-    {
-        public int n;
-    }
-    class Methodd
-    {
-        public static void ClassMethod(ClassNumber n1)
+        private int _num;
+        public int num { get; set; }
+        public void Info()
         {
-            n1.n = 9;
-        }
-        public static void StructMethod(StructNumber n1)
-        {
-            n1.n = 10;
+            Console.WriteLine("\nThe stored value is: {0}\n", num);
         }
     }
 }        

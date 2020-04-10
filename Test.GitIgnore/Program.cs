@@ -6,12 +6,9 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            ClassNumber classNumber = new ClassNumber();
-            classNumber.n = 11;
             StructNumber structNumber = new StructNumber();
-            structNumber.n = 12;
-            Console.WriteLine(structNumber.n);
-            Console.WriteLine(classNumber.n);
+            structNumber.num = 15;
+            structNumber.Info();
         }
     }
 }
