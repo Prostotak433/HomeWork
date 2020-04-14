@@ -6,12 +6,16 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Square square = new Square();
-            int area = square.Area(20,40);
-            int perimetr = square.Perimetr(20, 40);
-            Console.WriteLine("Area {0} ", area);
-            Console.WriteLine("Perimetr {0} ", perimetr);
-               
+            Console.Write("Введите первое целое число: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Введите второе целое число: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("Введите третье целое число: ");
+            int c = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Наибольший из трех: " + Math.Max(a, Math.Max(b, c)));
+            Console.WriteLine("Найменьшее из трехч: " + Math.Min(a, Math.Min(b, c)));
+            
         }
     }
 }
