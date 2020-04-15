@@ -7,12 +7,14 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your age: ");
-            int age = int.Parse(Console.ReadLine());
-            if (age >= 18)
-                Console.WriteLine("Congratulation! You are eligible for casting your vote.");
+            Console.Write("Value: ");
+            int m = int.Parse(Console.ReadLine());
+            if (m > 0)
+                Console.WriteLine("The value of n = 1");
+            else if (m == 0)
+                Console.WriteLine("The value of n = 0");
             else
-                Console.WriteLine("You are not eligible for casting your vote.");
+                Console.WriteLine("Value of m ={0} The value of n = -1", m);
         }
     }
 }
