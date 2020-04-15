@@ -7,24 +7,19 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input the 1st number : ");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.Write("nput the 2nd number : ");
-            int num2 = int.Parse(Console.ReadLine());
-            Console.Write("Input the 3rd number : ");
-            int num3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the value for X coordinate : ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("Input the value for Y coordinate : ");
+            int y = int.Parse(Console.ReadLine());
 
-            if (num1 > num2)
-            {
-                if (num1 > num3)
-                    Console.WriteLine("The 1st Number is the greatest among three");
-                else
-                    Console.WriteLine("The 3nd Number is the greatest among three");
-            }
-            else if (num2 > num3)
-                Console.WriteLine("The 2nd Number is the greatest among three");
-            else
-                Console.WriteLine("The 3nd Number is the greatest among three");
+            if (x > 0 && y > 0)
+                Console.WriteLine("The coordinate point ({0},{1}) lies in the 1 quadrant.", x, y);
+            else if (x > 0 && y < 0)
+                Console.WriteLine("The coordinate point ({0},{1}) lies in the 2 quadrant.", x, y);
+            else if (x < 0 && y > 0)
+                Console.WriteLine("The coordinate point ({0},{1}) lies in the 3 quadrant.", x, y);
+            else if (x < 0 && y < 0)
+                Console.WriteLine("The coordinate point ({0},{1}) lies in the 4 quadrant.", x, y);
 
         }
     }
