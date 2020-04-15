@@ -9,11 +9,13 @@ namespace Test.GitIgnore
         {
             Console.Write("Input 1st number: ");
             int a = int.Parse(Console.ReadLine());
-            Console.Write("Input 2nd number: ");
-            int b = int.Parse(Console.ReadLine());
-            if (a == b)
-                Console.WriteLine("{0} and {1} are equal", a, b);
-           
+            if (a % 2 != 0)
+                Console.WriteLine("{0} is an odd integer", a);
+            else
+                Console.WriteLine("++"); 
+               
+
+
         }
     }
 }
