@@ -7,14 +7,17 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Value: ");
+            Console.Write("The height of a person: ");
             int m = int.Parse(Console.ReadLine());
-            if (m > 0)
-                Console.WriteLine("The value of n = 1");
-            else if (m == 0)
-                Console.WriteLine("The value of n = 0");
+
+            if (m < 150)
+                Console.WriteLine("The prson is  Dwarf ");
+            else if ((m >= 150) && (m <= 165))
+                Console.WriteLine("The person is  average heighted");
+            else if ((m >= 165.0) && (m <= 195.0))
+                Console.Write("The person is taller. ");
             else
-                Console.WriteLine("Value of m ={0} The value of n = -1", m);
+                Console.Write("Abnormal height.");
         }
     }
 }
