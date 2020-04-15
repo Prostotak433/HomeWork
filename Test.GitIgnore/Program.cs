@@ -9,10 +9,10 @@ namespace Test.GitIgnore
         {
             Console.Write("Input 1st number: ");
             int a = int.Parse(Console.ReadLine());
-            if (a % 2 != 0)
-                Console.WriteLine("{0} is an odd integer", a);
+            if (a > 0)
+                Console.WriteLine("{0} is a positive number", a);
             else
-                Console.WriteLine("++"); 
+                Console.WriteLine("{0} is a not potsitive number",a); 
                
 
 
