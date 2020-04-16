@@ -7,32 +7,22 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input the marks obtained in Physics : ");
-            int ph = int.Parse(Console.ReadLine());
-            Console.Write("Input the marks obtained in Chemistry : ");
-            int ch = int.Parse(Console.ReadLine());
-            Console.Write("Input the marks obtained in Mathematics ");
-            int mt = int.Parse(Console.ReadLine());
-            Console.WriteLine("Total marks of Maths, Physics and Chemistry: {0}",ph+ch+mt);
-            Console.WriteLine("Total marks of Maths  and Physics: {0}", ph + mt);
+            Console.Write("Input value of a: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Input value of b: ");
+            double b = double.Parse(Console.ReadLine());
+            Console.Write("Input value of c: ");
+            double c = double.Parse(Console.ReadLine());
 
-            if (ph >= 65)
-            {
-                if (ch >= 55)
-                {
-                    if (mt >= 50)
-                    {
-                        if ((ph + ch + mt) >= 180 || (mt + ph) >= 140)
-                            Console.WriteLine("The  candidate is eligible for admission.");
-                    }
-                    else
-                        Console.Write("The candidate is not eligible.");
-                }
-                else
-                    Console.Write("The candidate is not eligible.");
-            }
+            double d = Math.Pow(b, 2) - 4 * a * c;
+            if (d < 0) Console.WriteLine("Dont have a root");
             else
-                Console.Write("The candidate is not eligible.");
+            {
+                double x1 = -(b - Math.Sqrt(d)) / (2 * a);
+                double x2 = -(b + Math.Sqrt(d)) / (2 * a);
+                if (x1 == x2) Console.WriteLine("Have 1 root x={0}", x1);
+                else Console.WriteLine("Have 2 root x1={0} and x2={1}", x1, x2);
+            }
         }
     }
 }
