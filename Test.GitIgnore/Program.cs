@@ -7,33 +7,14 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            string result;
-            Console.Write("Input the Roll Number of the student : ");
-            double student = double.Parse(Console.ReadLine());
-            Console.Write("Input the Name of the Student : ");
-            string name = Console.ReadLine();
-            Console.Write("Input the marks of Physics: ");
-            double physics = double.Parse(Console.ReadLine());
-            Console.Write("Input the marks of Chemistry: ");
-            double chemisry = double.Parse(Console.ReadLine());
-            Console.Write("Input the marks of Computer Application: ");
-            double computer = double.Parse(Console.ReadLine());
-
-            double total = (physics + chemisry + computer);
-            double sred = total / 3.0;
-            if (sred >= 90)
-                result = "Best";
-            else
-                if (sred < 90 && sred >= 75)
-                result = "Second";
-            else
-                if (sred < 75 && sred >= 60)
-                result = "Bad";
-            else
-                result = "Fail";
-            Console.Write("\nRoll No : {0}\nName of Student : {1}\n", student, name);
-            Console.Write("Marks in Physics : {0}\nMarks in Chemistry : {1}\nMarks in Computer Application : {2}\n", physics, chemisry, computer);
-            Console.Write("Total Marks = {0}\nPercentage = {1}\nDivision = {2}\n", total, sred, result);
+            Console.Write("Input days temperature: ");
+            int temp = int.Parse(Console.ReadLine());
+            if(temp < 0) Console.WriteLine("Freezing weather");
+            else if (temp < 10) Console.Write("Very cold weather.");
+            else if (temp < 20) Console.Write("Cold weather.");
+            else if (temp < 30) Console.Write("Normal in temp.");
+            else if (temp < 40) Console.Write("Its Hot.");
+            else Console.Write("Its very hot.");
         }
     }
 }
