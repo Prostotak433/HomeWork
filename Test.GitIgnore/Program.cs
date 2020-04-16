@@ -7,22 +7,33 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input value of a: ");
-            double a = double.Parse(Console.ReadLine());
-            Console.Write("Input value of b: ");
-            double b = double.Parse(Console.ReadLine());
-            Console.Write("Input value of c: ");
-            double c = double.Parse(Console.ReadLine());
+            string result;
+            Console.Write("Input the Roll Number of the student : ");
+            double student = double.Parse(Console.ReadLine());
+            Console.Write("Input the Name of the Student : ");
+            string name = Console.ReadLine();
+            Console.Write("Input the marks of Physics: ");
+            double physics = double.Parse(Console.ReadLine());
+            Console.Write("Input the marks of Chemistry: ");
+            double chemisry = double.Parse(Console.ReadLine());
+            Console.Write("Input the marks of Computer Application: ");
+            double computer = double.Parse(Console.ReadLine());
 
-            double d = Math.Pow(b, 2) - 4 * a * c;
-            if (d < 0) Console.WriteLine("Dont have a root");
+            double total = (physics + chemisry + computer);
+            double sred = total / 3.0;
+            if (sred >= 90)
+                result = "Best";
             else
-            {
-                double x1 = -(b - Math.Sqrt(d)) / (2 * a);
-                double x2 = -(b + Math.Sqrt(d)) / (2 * a);
-                if (x1 == x2) Console.WriteLine("Have 1 root x={0}", x1);
-                else Console.WriteLine("Have 2 root x1={0} and x2={1}", x1, x2);
-            }
+                if (sred < 90 && sred >= 75)
+                result = "Second";
+            else
+                if (sred < 75 && sred >= 60)
+                result = "Bad";
+            else
+                result = "Fail";
+            Console.Write("\nRoll No : {0}\nName of Student : {1}\n", student, name);
+            Console.Write("Marks in Physics : {0}\nMarks in Chemistry : {1}\nMarks in Computer Application : {2}\n", physics, chemisry, computer);
+            Console.Write("Total Marks = {0}\nPercentage = {1}\nDivision = {2}\n", total, sred, result);
         }
     }
 }
