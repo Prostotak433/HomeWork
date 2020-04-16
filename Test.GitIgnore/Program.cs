@@ -7,20 +7,33 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input the value for X coordinate : ");
-            int x = int.Parse(Console.ReadLine());
-            Console.Write("Input the value for Y coordinate : ");
-            int y = int.Parse(Console.ReadLine());
+            Console.Write("Input the marks obtained in Physics : ");
+            int ph = int.Parse(Console.ReadLine());
+            Console.Write("Input the marks obtained in Chemistry : ");
+            int ch = int.Parse(Console.ReadLine());
+            Console.Write("Input the marks obtained in Mathematics ");
+            int mt = int.Parse(Console.ReadLine());
+            Console.WriteLine("Total marks of Maths, Physics and Chemistry: {0}",ph+ch+mt);
+            Console.WriteLine("Total marks of Maths  and Physics: {0}", ph + mt);
 
-            if (x > 0 && y > 0)
-                Console.WriteLine("The coordinate point ({0},{1}) lies in the 1 quadrant.", x, y);
-            else if (x > 0 && y < 0)
-                Console.WriteLine("The coordinate point ({0},{1}) lies in the 2 quadrant.", x, y);
-            else if (x < 0 && y > 0)
-                Console.WriteLine("The coordinate point ({0},{1}) lies in the 3 quadrant.", x, y);
-            else if (x < 0 && y < 0)
-                Console.WriteLine("The coordinate point ({0},{1}) lies in the 4 quadrant.", x, y);
-
+            if (ph >= 65)
+            {
+                if (ch >= 55)
+                {
+                    if (mt >= 50)
+                    {
+                        if ((ph + ch + mt) >= 180 || (mt + ph) >= 140)
+                            Console.WriteLine("The  candidate is eligible for admission.");
+                    }
+                    else
+                        Console.Write("The candidate is not eligible.");
+                }
+                else
+                    Console.Write("The candidate is not eligible.");
+            }
+            else
+                Console.Write("The candidate is not eligible.");
         }
     }
 }
+
