@@ -7,35 +7,21 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input an Alphabet (A-Z or a-z) : ");
-            char ch = char.Parse(Console.ReadLine().ToLower());
-            int i = ch;
-            if (i >= 47 && 0 <= 66) Console.Write("You entered a number, Please enter an alpahbet.");
-            else
+            Console.Write("Input Cost Price: ");
+            int start = int.Parse(Console.ReadLine());
+            Console.Write("Input Selling Price: ");
+            int sel = int.Parse(Console.ReadLine());
+            if (sel > start)
             {
-                switch(ch)
-                {
-                    case 'a':
-                        Console.WriteLine("The Alphabet is vowel");
-                        break;
-                    case 'i':
-                        Console.WriteLine("The Alphabet is vowel");
-                        break;
-                    case 'o':
-                        Console.WriteLine("The Alphabet is vowel");
-                        break;
-                    case 'u':
-                        Console.WriteLine("The Alphabet is vowel");
-                        break;
-                    case 'e':
-                        Console.WriteLine("The Alphabet is vowel");
-                        break;
-                    default:
-                        Console.WriteLine("The Alphabet is not a vowel");
-                        break;
-                }
+                int sum = sel - start;
+                Console.WriteLine("You can booked your profit amount: {0}", sum);
             }
-            Console.ReadKey();
+            else if (start > sel)
+            {
+                int sum = start - sel;
+                Console.Write("You got a loss of amount : {0}", sum);
+            }
+            else Console.WriteLine("You are running in no profit no loss condition.");
         }
     }
 }
