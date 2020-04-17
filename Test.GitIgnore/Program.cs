@@ -7,14 +7,15 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input days temperature: ");
-            int temp = int.Parse(Console.ReadLine());
-            if(temp < 0) Console.WriteLine("Freezing weather");
-            else if (temp < 10) Console.Write("Very cold weather.");
-            else if (temp < 20) Console.Write("Cold weather.");
-            else if (temp < 30) Console.Write("Normal in temp.");
-            else if (temp < 40) Console.Write("Its Hot.");
-            else Console.Write("Its very hot.");
+            Console.Write("1-угол : ");
+            int a1 = int.Parse(Console.ReadLine());
+            Console.Write("2-угол : ");
+            int a2 = int.Parse(Console.ReadLine());
+            Console.Write("3-угол : ");
+            int a3 = int.Parse(Console.ReadLine());
+            int res = a1 + a2 + a3;
+            if (res == 180) Console.WriteLine("Можно построить треугольник");
+            else Console.WriteLine("Треугольник недействителен");
         }
     }
 }
