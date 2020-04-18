@@ -7,50 +7,35 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input Month(1-12) : ");
+            Console.WriteLine("Input 1 for area of circle");
+            Console.WriteLine("Input 2 for area of rectangle");
+            Console.WriteLine("Input 3 for area of triangle");
+            Console.WriteLine("Input your choice : ");
             int num = int.Parse(Console.ReadLine());
-            switch (num)
+            double area=0;
+            switch(num)
             {
                 case 1:
-                    Console.Write("January\n");
+                    Console.Write("Input radius of the circle : ");
+                    double r = double.Parse(Console.ReadLine());
+                    area = 3.14 * r * r;
                     break;
                 case 2:
-                    Console.Write("February\n");
+                    Console.Write("Input length  of the rectangle : ");
+                    double a = double.Parse(Console.ReadLine());
+                    Console.Write("Input  width of the rectangle : ");
+                    double b = Convert.ToInt32(Console.ReadLine());
+                    area = a * b;
                     break;
                 case 3:
-                    Console.Write("March\n");
-                    break;
-                case 4:
-                    Console.Write("April\n");
-                    break;
-                case 5:
-                    Console.Write("May\n");
-                    break;
-                case 6:
-                    Console.Write("June\n");
-                    break;
-                case 7:
-                    Console.Write("July\n");
-                    break;
-                case 8:
-                    Console.Write("August\n");
-                    break;
-                case 9:
-                    Console.Write("September\n");
-                    break;
-                case 10:
-                    Console.Write("October\n");
-                    break;
-                case 11:
-                    Console.Write("November\n");
-                    break;
-                case 12:
-                    Console.Write("December\n");
-                    break;
-                default:
-                    Console.Write("invalid Month number. \nPlease try again ....\n");
+                    Console.Write("Input the base of the triangle :");
+                    double j = double.Parse(Console.ReadLine());
+                    Console.Write("Input the hight of the triangle :");
+                    double h = double.Parse(Console.ReadLine());
+                    area = .5 * j * h;
                     break;
             }
+            Console.Write("The area is : {0}\n", area);
         }
     }
 }
