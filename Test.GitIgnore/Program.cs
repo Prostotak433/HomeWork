@@ -7,35 +7,38 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input 1 for area of circle");
-            Console.WriteLine("Input 2 for area of rectangle");
-            Console.WriteLine("Input 3 for area of triangle");
-            Console.WriteLine("Input your choice : ");
-            int num = int.Parse(Console.ReadLine());
-            double area=0;
-            switch(num)
+            Console.Write("Enter the first Integer : ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second Integer : ");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Here are the options : ");
+            Console.WriteLine("1-Addition.");
+            Console.WriteLine("2-Substraction.");
+            Console.WriteLine("3-Multiplication.");
+            Console.WriteLine("4-Division.");
+            Console.WriteLine("5-Exit.");
+            Console.Write("Input your choice : ");
+            int choise = int.Parse(Console.ReadLine());
+            switch (choise)
             {
                 case 1:
-                    Console.Write("Input radius of the circle : ");
-                    double r = double.Parse(Console.ReadLine());
-                    area = 3.14 * r * r;
+                    Console.WriteLine("The Addition of  {0} and {1} is: {2}", num1, num2, num1 + num2);
                     break;
                 case 2:
-                    Console.Write("Input length  of the rectangle : ");
-                    double a = double.Parse(Console.ReadLine());
-                    Console.Write("Input  width of the rectangle : ");
-                    double b = Convert.ToInt32(Console.ReadLine());
-                    area = a * b;
+                    Console.WriteLine("The Substraction of {0}  and {1} is: {2}", num1, num2, num1 - num2);
                     break;
                 case 3:
-                    Console.Write("Input the base of the triangle :");
-                    double j = double.Parse(Console.ReadLine());
-                    Console.Write("Input the hight of the triangle :");
-                    double h = double.Parse(Console.ReadLine());
-                    area = .5 * j * h;
+                    Console.WriteLine("The Substraction of {0}  and {1} is: {2}", num1, num2, num1 * num2);
+                    break;
+                case 4:
+                    Console.WriteLine("The Division of {0}  and {1} is : {2}", num1, num2, num1 / num2);
+                    break;
+                case 5:
+                    break;
+                default:
+                    Console.WriteLine("Input correct option");
                     break;
             }
-            Console.Write("The area is : {0}\n", area);
         }
     }
 }
