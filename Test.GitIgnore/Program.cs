@@ -7,46 +7,34 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input Digit(0-9) : ");
+            Console.Write("Input Month(1-12) : ");
             int num = int.Parse(Console.ReadLine());
 
             switch (num)
             {
-                case 0:
-                    Console.Write("Zero\n");
-                    break;
-
                 case 1:
-                    Console.Write("one\n");
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    Console.WriteLine("Month have 31 days");
                     break;
                 case 2:
-                    Console.Write("Two\n");
-                    break;
-                case 3:
-                    Console.Write("Three\n");
+                    Console.WriteLine("Month have 28-29 days");
                     break;
                 case 4:
-                    Console.Write("Four\n");
-                    break;
-                case 5:
-                    Console.Write("Five\n");
-                    break;
                 case 6:
-                    Console.Write("Six\n");
-                    break;
-                case 7:
-                    Console.Write("Seven\n");
-                    break;
-                case 8:
-                    Console.Write("Eight\n");
-                    break;
                 case 9:
-                    Console.Write("Nine\n");
+                case 11:
+                    Console.WriteLine("Month have 30 days");
                     break;
                 default:
-                    Console.Write("invalid digit. \nPlease try again ....\n");
+                    Console.Write("invalid Month number.\nPlease try again ....\n");
                     break;
             }
+        }
     }
 }
 
