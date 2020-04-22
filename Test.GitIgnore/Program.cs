@@ -7,11 +7,14 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Radius: ");
-            double r = double.Parse(Console.ReadLine());
-            const double PI = 3.14;
-            Console.WriteLine(4 * PI * (r * r));
-            Console.WriteLine(4/3 * PI * (r * r * r));
+            Console.Write("Input a symbol: ");
+            char symvol = Convert.ToChar(Console.ReadLine());
+            if ((symvol == 'a') || (symvol == 'e') || (symvol == 'i') || (symvol == 'o') || (symvol == 'u'))
+                Console.WriteLine("It's a lowercase vowel.");
+            else if ((symvol >= '0') && (symvol <= '9'))
+                Console.WriteLine("It's a digit.");
+            else
+                Console.Write("It's another symbol.");
         }
     }
 }
