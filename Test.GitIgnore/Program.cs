@@ -7,19 +7,34 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            int a = int.Parse(Console.ReadLine());
-            Console.Write("Enter the desired width: ");
-            int b = int.Parse(Console.ReadLine());
-            int b1 = b;
-            for(int i = 0; i < b1; i++)
+            string username, password;
+            int poputka = 0, poputok = 0;
+            do
             {
-                for (int j = 0; j < b; j++)
+                Console.Write("Input a username: ");
+                username = Console.ReadLine();
+                Console.Write("Input a password: ");
+                password = Console.ReadLine();
+                if (username == "serg433" && password == "123qwe")
                 {
-                    Console.Write(a);
+                    poputka = 1;
+                    poputok = 3;
                 }
-                Console.WriteLine();
-                b--;
+                else
+                {
+                    poputka = 0;
+                    poputok++;
+                }
+            }
+            while ((username != "serg433") || (password != "123qwe") && (poputok != 3));
+            if (poputka == 0)
+            {
+                Console.Write("\nLogin attemp more than three times. Try later!\n\n");
+            }
+            else
+                if(poputka==1)
+            {
+                Console.Write("\nPassword entered successfull!\n\n");
             }
         }
     }
