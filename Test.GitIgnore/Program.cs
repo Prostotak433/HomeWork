@@ -7,17 +7,12 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input first number: ");
-            double num1 = double.Parse(Console.ReadLine());
-            Console.Write("Input second number: ");
-            double num2 = double.Parse(Console.ReadLine());
-            Console.Write("Input operation: ");
-            char oper = char.Parse(Console.ReadLine());
-            if (oper == '+') Console.WriteLine("Expected Output: {0} + {1} = {2}", num1, num2, num1 + num2);
-            else if (oper == '-') Console.WriteLine("Expected Output: {0} - {1} = {2}", num1, num2, num1 - num2);
-            else if (oper == '*') Console.WriteLine("Expected Output: {0} * {1} = {2}", num1, num2, num1 * num2);
-            else if (oper == '/') Console.WriteLine("Expected Output: {0} / {1} = {2}", num1, num2, num1 / num2);
-            else Console.WriteLine("Wrong Character");
+            const double PI = 3.14;
+            Console.WriteLine("Input the radius of the circle : ");
+            double r = Convert.ToDouble(Console.ReadLine());
+            double per = 2 * PI * r;
+            Console.WriteLine("Perimeter of Circle : {0}", per);
+            Console.Read();
         }
     }
 }
