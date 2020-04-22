@@ -7,13 +7,20 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter letter: ");
-            string a = Console.ReadLine();
-            Console.Write("Enter letter: ");
-            string b = Console.ReadLine();
-            Console.Write("Enter letter: ");
-            string c = Console.ReadLine();
-            Console.WriteLine("{0} {1} {2}", c, b, a);
+            Console.Write("Enter a number: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter the desired width: ");
+            int b = int.Parse(Console.ReadLine());
+            int b1 = b;
+            for(int i = 0; i < b1; i++)
+            {
+                for (int j = 0; j < b; j++)
+                {
+                    Console.Write(a);
+                }
+                Console.WriteLine();
+                b--;
+            }
         }
     }
 }
