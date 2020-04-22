@@ -7,35 +7,17 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            string username, password;
-            int poputka = 0, poputok = 0;
-            do
-            {
-                Console.Write("Input a username: ");
-                username = Console.ReadLine();
-                Console.Write("Input a password: ");
-                password = Console.ReadLine();
-                if (username == "serg433" && password == "123qwe")
-                {
-                    poputka = 1;
-                    poputok = 3;
-                }
-                else
-                {
-                    poputka = 0;
-                    poputok++;
-                }
-            }
-            while ((username != "serg433") || (password != "123qwe") && (poputok != 3));
-            if (poputka == 0)
-            {
-                Console.Write("\nLogin attemp more than three times. Try later!\n\n");
-            }
-            else
-                if(poputka==1)
-            {
-                Console.Write("\nPassword entered successfull!\n\n");
-            }
+            Console.Write("Input first number: ");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.Write("Input second number: ");
+            double num2 = double.Parse(Console.ReadLine());
+            Console.Write("Input operation: ");
+            char oper = char.Parse(Console.ReadLine());
+            if (oper == '+') Console.WriteLine("Expected Output: {0} + {1} = {2}", num1, num2, num1 + num2);
+            else if (oper == '-') Console.WriteLine("Expected Output: {0} - {1} = {2}", num1, num2, num1 - num2);
+            else if (oper == '*') Console.WriteLine("Expected Output: {0} * {1} = {2}", num1, num2, num1 * num2);
+            else if (oper == '/') Console.WriteLine("Expected Output: {0} / {1} = {2}", num1, num2, num1 / num2);
+            else Console.WriteLine("Wrong Character");
         }
     }
 }
