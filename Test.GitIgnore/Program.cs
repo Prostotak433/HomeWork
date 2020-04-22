@@ -7,12 +7,13 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            const double PI = 3.14;
-            Console.WriteLine("Input the radius of the circle : ");
-            double r = Convert.ToDouble(Console.ReadLine());
-            double per = 2 * PI * r;
-            Console.WriteLine("Perimeter of Circle : {0}", per);
-            Console.Read();
+            Console.WriteLine("x = y² - 2y +1");
+            int x = 0;
+            for(int y = -5; y <= 5; y++)
+            {
+                x = y * y - 2 * y + 1;
+                Console.WriteLine("y = {0}; x = {0}²-2*{0}+1 = {1}", y, x);
+            }
         }
     }
 }
