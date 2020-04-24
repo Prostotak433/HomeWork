@@ -7,25 +7,31 @@ namespace Test.GitIgnore
     {
         static void Main(string[] args)
         {
-            Console.Write("Input  any Decimal number: ");
-            int decn = Convert.ToInt32(Console.ReadLine());
-            int q = decn;
-            for (int i = q; i > 0; i = i / 16)
+            int flg3=0;
+            Console.Write("Input  a positive integer: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 3; i <= num / 2; i++)
             {
-                int tmp = i % 16;
-                if (tmp < 10)
-                    tmp = tmp + 48;
-                else
-                    tmp = tmp + 55;
-                int dn = dn * 100 + tmp;
+                int flg1 = 1;
+                int flg2 = 1;
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0)
+                    { flg1 = 0; j = i; }
+                }
+                for (int j = 2; j < num - i; j++)
+                {
+                    if ((num - i) % j == 0)
+                    { flg2 = 0; j = num - i; }
+                }
+                if (flg1 == 1 && flg2 == 1)
+                {
+                    Console.Write("{0} =  {1} + {2}  \n", num, i, num - i);
+                     flg3 = 1;
+                }
             }
-            Console.Write("\nThe equivalent Hexadecimal Number : ");
-            for (int j = dn; j > 0; j = j / 100)
-            {
-                int s = j % 100;
-                Console.Write("{0}", (char)s);
-            }
-            Console.Write("\n\n");
+            if (flg3 == 0)
+            { Console.Write("\n{0} can not be expressed as sum of two prime numbers.\n\n", num); }
         }
     }
 }
