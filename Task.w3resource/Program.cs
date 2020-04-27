@@ -6,12 +6,20 @@ namespace Task.w3resource
     {
         static void Main(string[] args)
         {
+            int k = 5, ip = 0;
             for (int i = 0; i <= 6; i++)
             {
                 for (int u = 0; u <= 6; u++)
                 {
-                    if ((u == 4 && 1 != 6) || (i == 0 && u > 2 && u < 6) || (i == 6 && u ==3 ) || (i == 5 && u == 2))
+                    if (u == 1 || ((i == u + 1) && u != 0))
                         Console.Write("*");
+
+                    else if (i == ip && u == k)
+                    {
+                        Console.Write("*");
+                        ip = ip + 1;
+                        k = k - 1;
+                    }
                     else
                         Console.Write(" ");
                 }
