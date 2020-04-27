@@ -10,7 +10,7 @@ namespace Task.w3resource
             {
                 for (int u = 0; u <= 6; u++)
                 {
-                    if (u == 3 || (i == 0 && u > 0 && u < 6) || (i == 6 && u > 0 && u < 6))
+                    if ((u == 4 && 1 != 6) || (i == 0 && u > 2 && u < 6) || (i == 6 && u ==3 ) || (i == 5 && u == 2))
                         Console.Write("*");
                     else
                         Console.Write(" ");
