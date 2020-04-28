@@ -6,25 +6,21 @@ namespace Task.w3resource
     {
         static void Main(string[] args)
         {
+            int sum = 0;
             int[] mass = new int[100];
-            Console.Write("Input the number of elements to store in the array : ");
+            Console.Write("Input the number of elements to be stored in the array : ");
             int num = int.Parse(Console.ReadLine());
-            Console.WriteLine("Input {0} elements in the array: ", num);
-            for (int i = 0; i < num; i++)
+            Console.WriteLine("Input {0} elements in the array ", num);
+            for(int i = 0; i < num; i++)
             {
                 Console.Write("element - {0} : ", i);
                 mass[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("Elements in array are: ");
-            for(int i = 0; i < num; i++)
+            for(int i = 0; i < mass.Length; i++)
             {
-                Console.Write("{0} ", mass[i]);
+                sum += mass[i];
             }
-            Console.WriteLine("\nThe values store into the array in reverse are: ");
-            for(int i = num - 1; i >= 0; i--)
-            {
-                Console.Write("{0} ", mass[i]);
-            }
+            Console.Write("Sum of all elements stored in the array is : {0}", sum);        
         }   
     }
 }
