@@ -6,21 +6,30 @@ namespace Task.w3resource
     {
         static void Main(string[] args)
         {
-            int sum = 0;
-            int[] mass = new int[100];
+            int[] mass1 = new int[100];
+            int[] mass2 = new int[100];
             Console.Write("Input the number of elements to be stored in the array : ");
             int num = int.Parse(Console.ReadLine());
-            Console.WriteLine("Input {0} elements in the array ", num);
+            Console.WriteLine("Input {0} elements in the array: ", num);
             for(int i = 0; i < num; i++)
             {
-                Console.Write("element - {0} : ", i);
-                mass[i] = int.Parse(Console.ReadLine());
+                Console.Write("element - {0} : ",i);
+                mass1[i] = int.Parse(Console.ReadLine());
             }
-            for(int i = 0; i < mass.Length; i++)
+            for(int i = 0; i < num; i++)
             {
-                sum += mass[i];
+                mass2[i] = mass1[i];
             }
-            Console.Write("Sum of all elements stored in the array is : {0}", sum);        
+            Console.Write("The elements stored in the first array are : ");
+            for(int i = 0; i < num; i++)
+            {
+                Console.Write("{0}  ", mass1[i]);
+            }
+            Console.Write("\n\nThe elements copied into the second array are :\n");
+            for (int i = 0; i < num; i++)
+            {
+                Console.Write("{0}  ", mass2[i]);
+            }
         }   
     }
 }
