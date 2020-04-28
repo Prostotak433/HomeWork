@@ -6,19 +6,20 @@ namespace Task.w3resource
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i <= 6; i++)
+            int[] mass = new int[10];
+            Console.WriteLine("Input 10 elements in the array: ");
+            for (int i = 0; i < 10; i++)
             {
-                for (int u = 0; u <= 6; u++)
-                {
-                    if (((i == 0 || i == 6) && u >= 0 && u <= 6) || i + u == 6)
-                        Console.Write("*");
-                    else
-                        Console.Write(" ");
-                }
-                Console.Write("\n");
+                Console.Write("element - {0} : ", i);
+                mass[i] = int.Parse(Console.ReadLine());
             }
-            Console.Write("\n");
-        }
+            Console.WriteLine("Elements in array are: ");
+            for(int i = 0; i < 10; i++)
+            {
+                Console.Write("{0} ", mass[i]);
+            }
+
+        }   
     }
 }
         
