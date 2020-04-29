@@ -20,17 +20,31 @@ namespace Task.w3resource
             }
             for (int i = 0; i < num; i++)
             {
+                count = 0;
                 for (int j = i+1 ; j < num; j++)
                 {
                     if (mass1[i] == mass1[j])
                     {
                         count++;
-                        break;
                     }
                 }
+                for (int k = i + 1; k < num; k++)
+                {
+                    if (mass1[i] == mass1[k])
+                    {
+                        count++;
+                    }
+
+                    if (mass1[i] == mass1[i + 1])
+                    {
+                        i++;
+                    }
+                }
+                if (count == 0)
+                {
+                    Console.Write("{0} ", mass1[i]);
+                }
             }
-            Console.WriteLine("The number of Duplicate Elements Present in Array is = {0} ", count);
-            Console.ReadLine();
         }
     }
 }
